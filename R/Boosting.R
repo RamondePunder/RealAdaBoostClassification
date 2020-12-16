@@ -557,7 +557,7 @@ RealAdaBoostClass_CV <- function(lCVData = NA, lArgs = NA, vM= seq(1,15), sName 
   }
   
   # Run RealAdaBoost in parallel
-  mError <- matrix(unlist(mclapply(vM, Error, mc.cores = iCores)), nrow = length(vM), ncol = 2, byrow = TRUE)
+  mError <- matrix(unlist(lapply(vM, Error)), nrow = length(vM), ncol = 2, byrow = TRUE)
   mCVFig <- cbind(vM, mError)
   
   # RMSE minimising lambda on grid
