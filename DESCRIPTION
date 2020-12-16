@@ -1,0 +1,5 @@
+Package: RealAdaBoostClass
+Type: Package
+Title: Real AdaBoost for Classification
+Version: 0.0.1.0
+RoxygenNote: 7.1.1
